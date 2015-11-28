@@ -1,0 +1,43 @@
+{
+  "name": "planetarium",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "setup": "npm install && jspm install",
+    "serve": "gulp"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-preset-es2015": "^6.0.14",
+    "browser-sync": "^2.9.7",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.0.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-sass": "^2.0.4",
+    "gulp-shell": "^0.5.1",
+    "jspm": "^0.16.15",
+    "systemjs-builder": "^0.14.11"
+  },
+  "dependencies": {
+    "systemjs": "^0.19.5"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "app"
+    },
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.19",
+      "dat-gui": "npm:dat-gui@^0.5.0",
+      "three": "github:mrdoob/three.js@master"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
