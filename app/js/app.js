@@ -159,9 +159,9 @@ let earth = createPlanet({
       shininess: 10
     },
     textures: {
-      map: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/141228/earthmap1k.jpg',
-      bumpMap: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/141228/earthbump1k.jpg',
-      specularMap: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/141228/earthspec1k.jpg'
+      map: 'images/earthmap1k.jpg',
+      bumpMap: 'images/earthbump1k.jpg',
+      specularMap: 'images/earthspec1k.jpg'
     }
   },
   atmosphere: {
@@ -170,8 +170,8 @@ let earth = createPlanet({
       opacity: 0.8
     },
     textures: {
-      map: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/141228/earthcloudmap.jpg',
-      alphaMap: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/141228/earthcloudmaptrans.jpg'
+      map: 'images/earthcloudmap.jpg',
+      alphaMap: 'images/earthcloudmaptrans.jpg'
     },
     glow: {
       size: 0.02,
