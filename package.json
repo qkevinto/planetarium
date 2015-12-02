@@ -17,6 +17,7 @@
     "gulp-babel": "^6.0.0",
     "gulp-eslint": "^1.0.0",
     "gulp-html-replace": "^1.5.5",
+    "gulp-load-plugins": "^1.1.0",
     "gulp-sass": "^2.0.4",
     "gulp-shell": "^0.5.1",
     "jspm": "^0.16.15",

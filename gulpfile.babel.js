@@ -15,7 +15,7 @@ const paths = {
   html: '**/*.html',
   dist: 'dist/',
   tmp: '.tmp/'
-}
+};
 
 // JavaScript Linter
 gulp.task('eslint', () => {
@@ -39,21 +39,21 @@ gulp.task('scss', () => {
     .pipe($.sass().on('error', $.sass.logError))
     .pipe(gulp.dest(paths.tmp))
     .pipe(browserSync.stream());
-})
+});
 
 // HTML
 gulp.task('build:html', () => {
   return gulp.src(
-      [
-        paths.base + paths.html,
-        `!${paths.base}jspm_packages/**/*.*`
-      ],
-      {base: paths.base}
-    )
-    .pipe($.htmlReplace({
-      'js': paths.bundle
-    }))
-    .pipe(gulp.dest(paths.dist));
+    [
+      paths.base + paths.html,
+      `!${paths.base}jspm_packages/**/*.*`
+    ],
+    {base: paths.base}
+  )
+  .pipe($.htmlReplace({
+    'js': paths.bundle
+  }))
+  .pipe(gulp.dest(paths.dist));
 });
 
 // Clean
